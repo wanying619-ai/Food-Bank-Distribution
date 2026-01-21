@@ -1,0 +1,66 @@
+<!DOCTYPE type>
+<html>
+<head>
+	<title>Food Bank Distribution App</title>
+	<link rel="stylesheet" href="format.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<style>
+		.shopprofile {
+			float: right;
+		}
+
+		.foodcategory {
+			float: left;
+		}
+
+		#title {
+			font-weight: bold;
+			font-size: 40px;
+			font-family: Lucida Handwriting, cursive;
+		}
+
+		#content {
+			margin: 0 150px;
+			padding: 15px;
+			border: 2px solid #000000;
+			width: 250px;
+			height: 250px;
+		}
+
+		#content > img {
+			display: block;
+    		margin: 0 auto;
+		}
+
+		#content:hover {
+			opacity: 0.6
+		}
+	</style>
+</head>
+
+<body>
+<!-- Navbar -->
+<div id ="nav-placeholder"></div>
+<script>
+	$(function(){
+		$("#nav-placeholder").load("ShopNavigation.html");
+
+	});
+</script>
+<!-- END of Navbar -->
+
+<!-- Content -->
+<div class="container">
+	<p id = "title" style = "text-align: center">Shop Home</p>
+
+	<div class = "shopprofile">
+		<p id = "content"><a href='ShopProfile.php'><img src = "pic/shopProfile.png"></a></p>
+	</div>
+	<div class = "foodcategory">
+		<p id = "content"><a href='ShopFoodCategory.php'><img src = "pic/category.png"></a></p>
+	</div>
+</div>
+<!-- END of content -->
+
+</body>
+</html>

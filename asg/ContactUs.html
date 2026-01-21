@@ -1,0 +1,152 @@
+<html>
+<head>
+<title> Contact Us Page </title>
+<link rel="stylesheet" href="format.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+	html {
+	  box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+	  box-sizing: inherit;
+	}
+
+	.column {
+	  float: left;
+	  width: 25%;
+	  margin-bottom: 16px;
+	  padding: 0 20px;
+	}
+
+	.card {
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	  margin: 8px;
+	}
+
+	.about-section {
+	  padding: 50px;
+	  text-align: center;
+	  background-color:#474e5d;
+	  color: white;
+	}
+
+	.container {
+	  padding: 0 16px;
+	}
+
+	.container::after, .row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+
+	.title {
+	  color: grey;
+	}
+
+	@media screen and (max-width: 650px) {
+	  .column {
+		width: 100%;
+		display: block;
+	  }
+	}
+
+	.first {
+	  float:left;
+	  position:absolute;
+	  left:400;
+	}
+
+	.second {
+	  float:left;
+	  position:absolute;
+	  left:750;
+	}
+
+	.first .container h3,
+	.second .container h3{
+		text-align:center;
+	}
+</style>
+</head>
+<body>
+	<div id ="nav-placeholder"></div>
+	<script>
+		$(function(){
+			$("#nav-placeholder").load("MainPageNavigation.html");
+	
+		});
+	</script>
+<div class="about-section">
+  <h1>Contact Us</h1>
+  <p>Curious about it? Wish to contribute food to our foodbank? Contact us now!</p>
+</div>
+<br><br><br>
+<div class = "row1">
+  <div class = "first">
+	  <img src = "pic/instagram.png" alt="Instagram" >
+		<div class="container">
+          <h3>Food bank</h3>
+		</div>
+	  </div>
+	</div>
+	
+	<div class = "second">
+	  <img src = "pic/facebook.png" alt="Facebook" >
+		<div class="container">
+          <h3>Food bank</h3>
+		</div>
+	  </div>
+	</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="pic/profile01.png" alt="A" style="width:100%">
+      <div class="container">
+        <h2>Adeline</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Adeline@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="pic/profile01.png" alt="B" style="width:100%">
+      <div class="container">
+        <h2>Chee Wan Ying</h2>
+        <p class="title">Art Director</p>
+        <p>CWY@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="pic/profile01.png" alt="C" style="width:100%">
+      <div class="container">
+        <h2>Chee Wei Jae</h2>
+        <p class="title">Designer</p>
+        <p>CWJ@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <img src="pic/profile01.png" alt="D" style="width:100%">
+      <div class="container">
+        <h2>Jenniffer</h2>
+        <p class="title">Designer</p>
+        <p>Jenniffer@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

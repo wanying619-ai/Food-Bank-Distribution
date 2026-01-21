@@ -1,0 +1,75 @@
+<!--User Home page-->
+
+<html>
+<head>
+<title>User Home Page </title>
+<link rel="stylesheet" href="format.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+	
+	.wrapper .right h4{
+		float:left;
+		left:580;
+		position:absolute;
+		top:950;
+		text-align: justify;
+		width:600px;
+		font-family: "Josefin Sans", sans-serif;
+	}
+
+	.wrapper .right h1{
+		float:right;
+		right:500;
+		position:absolute;
+		top:900;
+		font-family: "Josefin Sans", sans-serif;
+	}
+
+	.word h2,h4{
+		text-align: center;
+		text-align: justify;
+		width:1100px;
+		right:300;
+		float:right;
+		padding: 0 110px;
+		font-family: "Josefin Sans", sans-serif;
+	}
+	#title {
+			font-weight: bold;
+			font-size: 40px;
+			font-family: Lucida;
+			color : blue;
+		}
+</style>
+</head>
+
+<body>
+<div id ="nav-placeholder">
+<script>
+	$(function(){
+		$("#nav-placeholder").load("UserNav.html");
+
+	});
+</script>
+</div>
+<p id = "title" style = "text-align: center">Welcome to User Home Page</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.6104793630134!2d101.63971171417276!3d2.9277714978675906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb6e4a9d3b7a1%3A0xd0f74e8ad10f1129!2sMultimedia%20University%20-%20MMU%20Cyberjaya!5e0!3m2!1sen!2smy!4v1633238196152!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<br><br><br>
+
+<div id ="word">
+	<h3>What Does Food bank distribution app Do?</h3>
+	<p style="color:#696969;"><b>Food bank distribution app</b> as a food bank in Malaysia is a non-profit governmental organization (NGO) incorporated on 2021 that is where manufacturers, distributors, wholesaler, retailers, companies or people can donate their foods which will then be collected and distributed to charitable/welfare homes, volunteer welfare organisation, refugees community, poor families, destitute and soup kitchen. </p>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br>
+	
+	<div class = "wrapper">
+		<div class = "left">
+			<img src = "pic/000.jpg" alt = "user" width = "650" height = "400">
+		</div>
+		<div class = "right">
+			<h1 id = "target" >About Us</h1>
+			<h4>We aim to rescue surplus food from the manufacturer, wholesaler, hypermarket and hotel industry; sort and re-distribute it to the identified targeted B40 communities, charity home and welfare center through our strategic partners to reduce food waste and to help to ease and lessen the cost of living of the underprivileged Malaysian.</h4>
+		</div>
+
+</body>
+</html>

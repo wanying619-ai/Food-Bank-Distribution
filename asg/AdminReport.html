@@ -1,0 +1,87 @@
+<!DOCTYPE type>
+<html>
+<head>
+	<title>Food Bank Distribution App</title>
+	<link rel="stylesheet" href="format.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<style>
+		.location {
+			float:left;
+		}
+
+		.amount {
+			float: right;
+		}
+
+		.category {
+			display: flex;
+			justify-content: center;
+		}
+
+		#title {
+			font-weight: bold;
+			font-size: 40px;
+			font-family: Lucida Handwriting, cursive;
+		}
+
+		#content {
+			margin: 0 50px;
+			padding: 15px;
+			border: 2px solid #000000;
+			width: 250px;
+			height: 250px;
+		}
+
+		#content > img {
+			display: block;
+    		margin: 0 auto;
+		}
+
+		#content:hover {
+			opacity: 0.6
+		}
+
+		.arrow {
+			width: 100px;
+			height: 100px;
+			margin-top: 20px;
+			margin-left: 30px;
+		}
+	</style>
+</head>
+
+<body>
+<!-- Navbar -->
+<div id ="nav-placeholder"></div>
+<script>
+	$(function(){
+		$("#nav-placeholder").load("AdminNavigation.html");
+
+	});
+</script>
+<!-- END of Navbar -->
+
+<!-- Content -->
+<div class="container">
+	<p id = "title" style = "text-align: center">Report</p>
+	<div class = "location">
+		<p id = "content"><a href="AdminLocation.php"><img src = "pic/location.png"></a></p>
+	</div>
+
+
+	<div class = "amount">
+		<p id = "content"><a href="AdminFoodAmount.php"><img src = "pic/amount.png"></a></p>
+	</div>
+
+	<div class = "category">
+		<p id = "content"><a href="AdminFoodCategory.php"><img src = "pic/category.png"></a></p>
+	</div>
+</div>
+
+<br>
+
+<a href='AdminHome.html'><img src = "pic/arrow.png" alt="logo" class="arrow"></a>
+<!-- END of content -->
+
+</body>
+</html>
